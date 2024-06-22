@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starter</title>
+  {{> head}}
+</head>
+
+<body class="app">
+  {{> navigation}}
+  {{> sidebar}}
+  <main class="mainContent">
+    <div class="container">
+      <div class="default">
+        <div class="default__main">
+          <div class="row">
+            Tu będzie slider :)
+          </div>
+          <!--  -->
+          <div class="row postCreate">
+            <!--  -->
+            <div class="postCreate__head">
+              <a href="#">
+                <i class="fa-regular fa-pen-to-square"></i>
+                <span>Create Post</span>
+              </a>
+            </div>
+            <!--  -->
+            <div class="postCreate__area">
+              <img src="/assets/img/profile-4.png" alt="avatar">
+              <textarea placeholder="What's on your mind?" name="postCreate" id="postCreate" cols="30"
+                rows="10"></textarea>
+            </div>
+            <!--  -->
+            <div class="postCreate__icons">
+              <div class="postCreate__iconsLeft">
+                <a href="#" class="postCreate__iconsLeftItem">
+                  <i class="fa-solid fa-video postCreate__iconsItemLive"></i>
+                  <span class="postCreate__iconsItemTitle">Live Video</span>
+                </a>
+                <a href="#" class="postCreate__iconsLeftItem">
+                  <i class="fa-solid fa-image postCreate__iconsItemPhoto"></i>
+                  <span class="postCreate__iconsItemTitle">Photo/Video</span>
+                </a>
+                <a href="#" class="postCreate__iconsLeftItem">
+                  <i class="fa-solid fa-camera postCreate__iconsLeftItemFeeling"></i>
+                  <span class="postCreate__iconsLeftItemTitle">Feeling/Activity</span>
+                </a>
+              </div>
+              <div class="postCreate__iconsRight">
+                <a href="#" class="postCreate__iconsRightItem">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <div class="default__side">
+          <div class="row">
+            friend request
+          </div>
+          <div class="row">
+            confirm friend
+          </div>
+          <div class="row">
+            Suggest Group
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+@use '../abstaract/'as *;
+
+.default {
+    background-color: aquamarine;
+    display: flex;
+
+    &__main {
+        margin: 0 $gutter-gap;
+        height: 100vh;
+        width: calc((100% / 3) * 2);
+        background-color: red;
+    }
+
+    &__side {
+        margin: 0 $gutter-gap 0 0;
+        height: 100vh;
+        width: calc(100% / 3);
+        background-color: aqua;
+    }
+
+    .postCreate {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__head {
+            margin: 0 0 10px 0;
+
+            a {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 5px;
+                padding: 10px 0 5px 0;
+            }
+
+            i {
+                background-color: $default-post-bg-color;
+                color: $default-post-icon-color;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            span {
+                color: $default-post-gray-color;
+                font-size: 18px;
+            }
+        }
+
+        &__area {
+            position: relative;
+            height: 30%;
+
+            img {
+                position: absolute;
+                border-radius: 50%;
+                inset: 10px auto auto 10px;
+                width: 30px;
+                height: 30px;
+            }
+
+            textarea {
+                width: 100%;
+                padding: 15px 15px 15px 55px;
+                border-radius: 15px;
+                border: 2px #f1f1f1 solid;
+                resize: none;
+                color: $default-post-gray-color;
+            }
+        }
+
+        &__icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0 10px 0;
+
+            &Left {
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+
+                &Item {
+                    color: $default-post-writte-icons-color;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .fa-video {
+                        color: #e50202;
+                    }
+
+                    .fa-image {
+                        color: #10d876;
+                    }
+
+                    .fa-camera {
+                        color: #fe9431;
+                    }
+
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            &Right {
+                // dokonczś
+            }
+        }
+    }
+}
