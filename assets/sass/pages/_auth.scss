@@ -105,7 +105,11 @@
         font-size: 14px;
         border: none;
         color: $auth-button-text;
-        background-color: $auth-button-bg;
+        background-color: green;
+
+        &:disabled {
+            background-color: #6b6b6b;
+        }
     }
 
     &__info {
